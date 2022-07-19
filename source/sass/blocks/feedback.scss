@@ -1,0 +1,85 @@
+.feedback {
+	background-color: #00b2ff;
+	background-image: url("../img/desktop/feedback-figure.png");
+	background-repeat: no-repeat;
+	background-position: -116px 50%;
+
+	// Сделать ретинизацию изображения
+}
+
+
+.feedback__wrapper {
+	display: flex;
+	padding-top: 170px;
+	padding-bottom: 250px;
+}
+
+.feedback__contact {
+	max-width: 580px;
+}
+
+.feedback__contact-title {
+	font-family: $secondary-font;
+	font-size: 36px;
+	line-height: 51px;
+	font-weight: 400;
+	color: #ffffff;
+	margin: 0;
+	margin-bottom: 14px;
+}
+
+.feedback__contact-text {
+	line-height: 22px;
+	color: #ffffff;
+	margin: 0;
+	margin-bottom: 14px;
+}
+
+.feedback__form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.feedback__input {
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+	width: calc(100% / 2 - 15px);
+	background-color: rgba(4, 20, 39, 0.15);
+	border: none;
+	border-radius: 3px;
+	padding: 14px;
+
+	&:first-of-type {
+		margin-right: 30px;
+	}
+
+	&::placeholder {
+		color: #ffffff;
+	}
+}
+
+.feedback__area {
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+	width: 100%;
+	min-height: 155px;
+	margin-top: 20px;
+	margin-bottom: 14px;
+	background-color: rgba(4, 20, 39, 0.15);
+	border: none;
+	border-radius: 3px;
+	padding: 25px 15px;
+
+	&::placeholder {
+		color: #ffffff;
+	}
+}
+
+.feedback__picture {
+	order: -1;
+	margin-right: 115px;
+}
