@@ -1,0 +1,49 @@
+.promo {
+	background-image: url('../img/desktop/promo-background.jpg');
+	background-position: 100% 100%;
+
+	margin-top: -20px;
+
+	/* Сделать ретинизацию изображения */
+}
+
+.promo__wrapper {
+	padding-top: 185px;
+	padding-bottom: 280px;
+	padding-left: 475px;
+}
+
+.promo__title {
+	font-family: $secondary-font;
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 94px;
+	letter-spacing: 0.07em;
+	color: #f2f5f6;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.promo__text {
+	color: #f2f5f6;
+	font-size: 22px;
+	line-height: 1.55;
+	width: 685px;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.promo__get {
+	font-family: $secondary-font;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #f2f5f6;
+	background-color: #00B2FF;
+	border: none;
+	border-radius: 3px;
+	padding: 17px 27px;
+	cursor: pointer;
+}
