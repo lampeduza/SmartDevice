@@ -146,3 +146,11 @@
 	right: 25px;
 	cursor: pointer;
 }
+
+@media (max-width: 769px) {
+	.overlay__contact {
+		padding: 25px;
+		width: 90%;
+		top: 60px;
+	}
+}

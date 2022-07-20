@@ -109,7 +109,7 @@
 			<h2 class="visually-hidden">Наши преимущества</h2>
 
 			<ul class="advantages__list">
-				<li class="advantages__item">
+				<li class="advantages__item advantages__item--current">
 					<svg width="35" height="35">
 	  				<use xlink:href="#stopwatch"></use>
 	  			</svg>
@@ -158,7 +158,7 @@
 			</div>
 
 			<picture class="about__picture">
-				<img class="about__image" src="img/desktop/2022.png 1x" srcset="img/desktop/2022@2x.png 2x" width="150" height="320" alt="Год">
+				<img class="about__image" src="img/desktop/2022.png" srcset="img/desktop/2022@2x.png" width="150" height="320" alt="Год">
 			</picture>
 		</div>
 	</section>
@@ -204,7 +204,7 @@
 				<h2 class="feedback__contact-title">Остались вопросы? Задайте их нам!</h2>
 				<p class="feedback__contact-text">Мы проконсультируем Вас бесплатно</p>
 
-				<form class="feedback__form" action="" method="post">
+				<form class="feedback__form" action="url" method="post">
 					<label class="visually-hidden" for="username">Ваше имя</label>
 					<input class="feedback__input" type="text" name="username" id="username" placeholder="Имя" required>
 
@@ -260,9 +260,9 @@
 		</div>
 
 		<div class="footer__site-sections site-sections">
-			<h3 class="site-sections__title" tabindex="0">Разделы сайта</h3>
+			<p class="site-sections__title site-sections__title--clicked" tabindex="0">Разделы сайта</p>
 
-			<ul class="site-sections__list">
+			<ul class="site-sections__list site-sections__list--expanded">
 				<li class="site-sections__item"><a class="site-sections__link" href="#about">О Компаниии</a></li>
 				<li class="site-sections__item"><a class="site-sections__link" href="#products">Продукты</a></li>
 				<li class="site-sections__item"><a class="site-sections__link" href="#manufactory">Производство печатных плат</a></li>
@@ -274,9 +274,9 @@
 		</div>
 
 		<address class="footer__address address">
-			<h3 class="address__title" tabindex="0">Наш офис</h3>
+			<p class="address__title address__title--clicked" tabindex="0">Наш офис</p>
 
-			<ul class="address__list">
+			<ul class="address__list address__list--expanded">
 				<li class="address__item">г. Мытищи, Олимпийский проспект, д.10</li>
 				<li class="address__item"><a class="address__link" href="tel:+74955894050">+7 (495) 589-40-50</a></li>
 				<li class="address__item"><a class="address__link" href="tel:+79253895829">+7 (925) 389-58-29</a></li>
@@ -291,12 +291,12 @@
 		<h2 class="overlay__title">Закажите звонок</h2>
 		<p class="overlay__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 
-		<form class="overlay__form" action="" method="post">
-			<label class="visually-hidden" for="username">Ваше имя</label>
-			<input class="overlay__input" type="text" name="username" id="username" placeholder="Имя" required>
+		<form class="overlay__form" action="url" method="post">
+			<label class="visually-hidden" for="username-field">Ваше имя</label>
+			<input class="overlay__input" type="text" name="username-field" id="username-field" placeholder="Имя" required>
 
-			<label class="visually-hidden" for="phone-number">Ваш телефон</label>
-			<input class="overlay__input" type="number" name="phone-number" id="phone-number" placeholder="Телефон" required>
+			<label class="visually-hidden" for="phone-number-field">Ваш телефон</label>
+			<input class="overlay__input" type="number" name="phone-number-field" id="phone-number-field" placeholder="Телефон" required>
 
 			<textarea class="overlay__area" name="area-field" placeholder="Ваш вопрос" required></textarea>
 

@@ -43,3 +43,23 @@
 		margin: 0;
 	}
 }
+
+@media (max-width: 769px) {
+	.footer {
+		margin-top: 0;
+	}
+
+	.footer__wrapper {
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+
+	.footer__additional {
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+
+	.footer__link {
+		margin-bottom: 20px;
+	}
+}

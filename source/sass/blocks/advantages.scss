@@ -23,7 +23,8 @@
 		margin-bottom: 20px;
 	}
 
-	&:hover {
+	&:hover,
+	&--current {
 		background-color: #00b2ff;
 
 		svg {

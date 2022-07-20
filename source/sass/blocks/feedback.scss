@@ -193,3 +193,50 @@
 		display: none;
 	}
 }
+
+@media (max-width: 769px) {
+	.feedback__wrapper {
+		padding-bottom: 90px;
+	}
+
+	.feedback__contact-title {
+		font-size: 30px;
+		line-height: 140.62%;
+		margin-bottom: 20px;
+	}
+
+	.feedback__contact-text {
+		font-size: 14px;
+		line-height: 134.4%;
+		margin-bottom: 40px;
+	}
+
+	.feedback__input {
+		width: 100%;
+		margin-bottom: 20px;
+
+		&:first-of-type {
+			margin-right: 0;
+		}
+	}
+
+	.feedback__area {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+
+	.feedback__ask {
+		margin-right: 0;
+		margin-bottom: 25px;
+		width: 100%;
+	}
+
+	.feedback__agreement {
+		margin: 0 auto;
+	}
+
+	.feedback__apply-label {
+		width: 100%;
+		margin-left: 5px;
+	}
+}
