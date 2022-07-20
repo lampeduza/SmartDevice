@@ -84,7 +84,7 @@
 	right: 0;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: 1919px) {
 	.service__wrapper {
 		padding-top: 60px;
 		padding-bottom: 75px;
@@ -127,5 +127,55 @@
 
 	.service__item-title {
 		padding-right: 80px;
+	}
+}
+
+@media (max-width: 769px) {
+	.service__wrapper {
+		padding-top: 50px;
+		padding-bottom: 86px;
+	}
+
+	.service__title {
+		margin-bottom: 40px;
+	}
+
+	.service__list {
+		gap: 30px;
+	}
+
+	.service__item {
+		padding: 30px;
+
+		&--manufactory {
+			background-image: url('../img/mobile/item1.jpg');
+
+			@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+   			background-image: url('../img/mobile/item1@2x.jpg');
+ 			}
+		}
+
+		&--assembling {
+			background-image: url('../img/mobile/item2.jpg');
+
+			@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  	 		background-image: url('../img/mobile/item2@2x.jpg');
+ 			}
+		}
+
+		&--accessories {
+			background-image: url('../img/mobile/item3.jpg');
+
+			@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  	 		background-image: url('../img/mobile/item3@2x.jpg');
+ 			}
+		}
+	}
+
+	.service__item-title {
+		font-size: 18px;
+		line-height: 30px;
+		width: auto;
+		padding-right: 75px;
 	}
 }

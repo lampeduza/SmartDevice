@@ -24,6 +24,7 @@
 	font-size: 80px;
 	line-height: 94px;
 	letter-spacing: 0.07em;
+	text-transform: uppercase;
 	color: #f2f5f6;
 	margin: 0;
 	margin-bottom: 40px;
@@ -53,7 +54,7 @@
 	cursor: pointer;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: 1919px) {
 	.promo {
 		background-image: url('../img/tablet/promo-background.jpg');
 		background-position: 100% 100%;
@@ -82,9 +83,33 @@
 
 	.promo__text {
 		margin-bottom: 50px;
+		width: auto;
 	}
 
 	.promo__get {
 		margin-left: 45px;
+	}
+}
+
+@media (max-width: 769px) {
+	.promo__wrapper {
+		padding-top: 80px;
+		padding-bottom: 190px;
+		padding-left: 25px;
+	}
+
+	.promo__title {
+		font-size: 36px;
+		line-height: 42px;
+	}
+
+	.promo__text {
+		font-size: 14px;
+		line-height: 155%;
+	}
+
+	.promo__get {
+		margin-left: 0;
+		width: 100%;
 	}
 }

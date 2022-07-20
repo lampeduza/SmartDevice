@@ -46,7 +46,7 @@
 	letter-spacing: 0.05em;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: 1919px) {
 	.header__wrapper {
 		align-items: flex-start;
 		justify-content: space-between;
@@ -54,9 +54,14 @@
 		padding-bottom: 25px;
 	}
 
+	.header__link {
+		margin: 0;
+	}
+
 	.header__list {
 		gap: 50px;
 		margin: 0;
+		margin-right: 30px;
 	}
 
 	.header__item-link {
@@ -71,5 +76,22 @@
 
 	.header__request {
 		display: none;
+	}
+}
+
+@media (max-width: 769px) {
+	.header__wrapper {
+		align-items: center;
+		padding-top: 15px;
+		padding-bottom: 20px;
+	}
+	.header__logo {
+		width: 35px;
+		height: 35px;
+	}
+
+	.header__list {
+		gap: 40px;
+		margin-right: 20px;
 	}
 }

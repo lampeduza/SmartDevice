@@ -1,3 +1,9 @@
+@media (min-width: $mobile-width) {
+	.container {
+		padding: 0 25px;
+	}
+}
+
 @media (min-width: $tablet-width) {
 	.container {
 		padding: 0 50px;

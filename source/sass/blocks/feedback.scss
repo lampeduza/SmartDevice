@@ -153,7 +153,7 @@
 	margin-top: 76px;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: 1919px) {
 	.feedback {
 		background-image: none;
 	}
@@ -165,6 +165,7 @@
 
 	.feedback__contact {
 		max-width: none;
+		width: 100%;
 	}
 
 	.feedback__contact-title {

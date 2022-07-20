@@ -41,7 +41,7 @@
 	cursor: pointer;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: 1919px) {
 	.about__wrapper {
 		padding-bottom: 80px;
 	}
@@ -56,5 +56,26 @@
 
 	.about__description-show {
 		margin-top: 0;
+	}
+}
+
+@media (max-width: 769px) {
+	.about__picture {
+		display: none;
+	}
+
+	.about__description-title {
+		font-size: 28px;
+		line-height: 140.62%;
+		margin-bottom: 15px;
+	}
+
+	.about__description-text {
+		font-size: 14px;
+		line-height: 134.4%;
+	}
+
+	.about__description-show {
+		min-width: 160px;
 	}
 }
