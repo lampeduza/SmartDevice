@@ -51,3 +51,15 @@
 	color: #041827;
 	margin: 0;
 }
+
+@media (max-width: $desktop-width) {
+	.advantages__wrapper {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.advantages__item-title {
+		font-size: 24px;
+		line-height: 140%;
+	}
+}

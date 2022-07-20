@@ -45,3 +45,31 @@
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 }
+
+@media (max-width: $desktop-width) {
+	.header__wrapper {
+		align-items: flex-start;
+		justify-content: space-between;
+		padding-top: 20px;
+		padding-bottom: 25px;
+	}
+
+	.header__list {
+		gap: 50px;
+		margin: 0;
+	}
+
+	.header__item-link {
+		svg {
+			margin: 0;
+		}
+	}
+
+	.header__item-data {
+		display: none;
+	}
+
+	.header__request {
+		display: none;
+	}
+}

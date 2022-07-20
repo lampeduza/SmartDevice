@@ -2,10 +2,14 @@
 	background-color: #041827;
 	background-image: url('../img/desktop/promo-background.jpg');
 	background-position: 100% 100%;
+	background-size: 1920px, 880px;
 
 	margin-top: -20px;
 
-	/* Сделать ретинизацию изображения */
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+   background-image: url('../img/desktop/promo-background@2x.jpg');
+   background-size: 1920px, 880px;
+ 	}
 }
 
 .promo__wrapper {
@@ -47,4 +51,40 @@
 	border-radius: 3px;
 	padding: 17px 27px;
 	cursor: pointer;
+}
+
+@media (max-width: $desktop-width) {
+	.promo {
+		background-image: url('../img/tablet/promo-background.jpg');
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top: -20px;
+
+		@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  	 background-image: url('../img/tablet/promo-background@2x.jpg');
+  	 background-size: cover;
+ 		}
+	}
+
+	.promo__wrapper {
+		padding-top: 80px;
+		padding-bottom: 205px;
+		padding-left: 50px;
+	}
+
+	.promo__title {
+		font-size: 64px;
+		line-height: 75px;
+		letter-spacing: 0.07em;
+		margin-bottom: 20px;
+	}
+
+	.promo__text {
+		margin-bottom: 50px;
+	}
+
+	.promo__get {
+		margin-left: 45px;
+	}
 }

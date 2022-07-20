@@ -1,12 +1,15 @@
 .feedback {
-	background-color: #00b2ff;
-	background-image: url("../img/desktop/feedback-figure.png");
+	background-color: #00b3ff;
+	background-image: url('../img/desktop/feedback-background.png');
+	background-position: 0 80%;
+	background-size: 1920px, 1582px;
 	background-repeat: no-repeat;
-	background-position: -116px 50%;
 
-	// Сделать ретинизацию изображения
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  	background-image: url('../img/desktop/feedback-background@2x.png');
+  	background-size: 1920px, 1582px;
+ 	}
 }
-
 
 .feedback__wrapper {
 	display: flex;
@@ -50,6 +53,7 @@
 	border: none;
 	border-radius: 3px;
 	padding: 14px;
+	outline: none;
 
 	&:first-of-type {
 		margin-right: 30px;
@@ -73,13 +77,118 @@
 	border: none;
 	border-radius: 3px;
 	padding: 25px 15px;
+	resize: none;
+	outline: none;
 
 	&::placeholder {
 		color: #ffffff;
 	}
 }
 
+.feedback__ask {
+	font-family: $secondary-font;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: #041427;
+	color: #ffffff;
+	padding: 13px 25px;
+	margin-bottom: 14px;
+	min-width: 265px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.feedback__agreement {
+	margin: 0;
+	width: 100%;
+}
+
+.feedback__apply-label {
+	display: block;
+	width: 234px;
+	padding-left: 26px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #FFFFFF;
+	opacity: 0.8;
+	position: relative;
+	cursor: pointer;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		transform: translateY(-50%);
+		top: 50%;
+	}
+
+	&::before {
+		width: 15px;
+		height: 15px;
+		border: 1px solid #ffffff;
+		border-radius: 2px;
+		left: 0;
+	}
+}
+
+.feedback__apply {
+	&:checked {
+		~ .feedback__apply-label {
+			&::after {
+				width: 9px;
+				height: 6px;
+				background-image: url('../img/icons/check.svg');
+				left: 3px;
+			}
+		}
+	}
+}
+
 .feedback__picture {
 	order: -1;
 	margin-right: 115px;
+	margin-top: 76px;
+}
+
+@media (max-width: $desktop-width) {
+	.feedback {
+		background-image: none;
+	}
+
+	.feedback__wrapper {
+		padding-top: 50px;
+		padding-bottom: 125px;
+	}
+
+	.feedback__contact {
+		max-width: none;
+	}
+
+	.feedback__contact-title {
+		margin-bottom: 10px;
+	}
+
+	.feedback__contact-text {
+		margin-bottom: 25px;
+	}
+
+	.feedback__area {
+		margin-bottom: 35px;
+	}
+
+	.feedback__ask {
+		margin-right: 85px;
+	}
+
+	.feedback__agreement {
+		width: auto;
+		margin-top: 10px;
+	}
+
+	.feedback__picture {
+		display: none;
+	}
 }

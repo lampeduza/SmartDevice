@@ -40,3 +40,21 @@
 	border-radius: 3px;
 	cursor: pointer;
 }
+
+@media (max-width: $desktop-width) {
+	.about__wrapper {
+		padding-bottom: 80px;
+	}
+
+	.about__description-title {
+		margin: 0;
+	}
+
+	.about__picture {
+		margin-right: 29px;
+	}
+
+	.about__description-show {
+		margin-top: 0;
+	}
+}
