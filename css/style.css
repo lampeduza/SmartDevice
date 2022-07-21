@@ -923,7 +923,14 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 25px;
-  margin-left: 15px; }
+  margin-left: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+@media (max-width: 1919px) {
+  .social {
+    max-width: 50%;
+    gap: 10px 25px; } }
 
 @media (max-width: 769px) {
   .social {
