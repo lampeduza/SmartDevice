@@ -62,7 +62,7 @@
     </svg>
     <header class="header">
       <div class="header__wrapper container">
-        <a class="header__link" href="index.html">
+        <a class="header__link">
           <picture class="header__picture">
             <source media="(max-width: 769px)" srcset="img/mobile/logo.svg">
             <img class="header__logo" src="img/desktop/logo.svg" width="215" height="55" alt="Smart Device. Умные технологии">
@@ -142,6 +142,8 @@
             <div class="about__description-data">
             	<p class="about__description-text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
             	<p class="about__description-text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные&nbsp;платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+            	<p class="about__description-text">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия. Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
+            	<p class="about__description-text">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия. Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
             </div>
             <button class="about__description-show" type="button">Подробнее</button>
           </div>
@@ -190,7 +192,7 @@
           <div class="feedback__contact">
             <h2 class="feedback__contact-title">Остались вопросы? Задайте их нам!</h2>
             <p class="feedback__contact-text">Мы проконсультируем Вас бесплатно</p>
-            <form class="feedback__form" action="url" method="post">
+            <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="username">Ваше имя</label>
               <input class="feedback__input" type="text" name="username" id="username" placeholder="Имя" required="">
               <label class="visually-hidden" for="phone-number">Ваш телефон</label>
@@ -198,7 +200,7 @@
               <textarea class="feedback__area" name="area-field" placeholder="Ваш вопрос" required=""></textarea>
               <button class="feedback__ask" type="submit">Задать вопрос</button>
               <p class="feedback__agreement">
-                <input class="visually-hidden feedback__apply" type="checkbox" id="apply-field" name="apply-field" checked="">
+                <input class="visually-hidden feedback__apply" type="checkbox" id="apply-field" name="apply-field" checked="" required="">
                 <label class="feedback__apply-label" for="apply-field">Я согласен на обработку  персональных данных</label>
               </p>
             </form>
@@ -263,7 +265,7 @@
       <div class="overlay__contact">
         <h2 class="overlay__title">Закажите звонок</h2>
         <p class="overlay__text">Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
-        <form class="overlay__form" action="url" method="post">
+        <form class="overlay__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="username-field">Ваше имя</label>
           <input class="overlay__input" type="text" name="username-field" id="username-field" placeholder="Имя" required="">
           <label class="visually-hidden" for="phone-number-field">Ваш телефон</label>
@@ -271,7 +273,7 @@
           <textarea class="overlay__area" name="area-field" placeholder="Ваш вопрос" required=""></textarea>
           <button class="overlay__ask" type="submit">Отправить</button>
           <p class="overlay__agreement">
-            <input class="visually-hidden overlay__apply" type="checkbox" id="agreement-field" name="agreement-field">
+            <input class="visually-hidden overlay__apply" type="checkbox" id="agreement-field" name="agreement-field" checked="" required="">
             <label class="overlay__apply-label" for="agreement-field">Я согласен на обработку  персональных данных</label>
           </p>
         </form>
