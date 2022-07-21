@@ -1,12 +1,17 @@
+.site-sections {
+	margin-top: 7px;
+}
+
 .site-sections__title {
 	font-family: $secondary-font;
 	font-size: 15px;
 	line-height: 16px;
 	font-weight: 400;
+	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	color: #ffffff;
 	margin: 0;
-	margin-bottom: 20px;
+	margin-bottom: 23px;
 }
 
 .site-sections__list {
@@ -17,7 +22,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	gap: 10px 30px;
+	gap: 8px 30px;
 }
 
 .site-sections__item {
@@ -40,9 +45,10 @@
 @media (max-width: 769px) {
 	.site-sections {
 		width: 100%;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 23px;
+		padding-bottom: 23px;
 		position: relative;
+		margin: 0;
 		// overflow: hidden;
 
 		&::before,
@@ -96,7 +102,7 @@
 		display: none;
 
 		&--expanded {
-			display: block;
+			display: flex;
 		}
 	}
 

@@ -15,9 +15,10 @@
 
 .header__list {
 	display: flex;
-	gap: 30px;
+	gap: 120px;
 	@include reset-list;
-	margin-right: 145px;
+	margin-right: 164px;
+	margin-top: -10px;
 }
 
 .header__item-link {
@@ -59,8 +60,9 @@
 	}
 
 	.header__list {
-		gap: 50px;
+		gap: 40px;
 		margin: 0;
+		margin-top: 10px;
 		margin-right: 30px;
 	}
 

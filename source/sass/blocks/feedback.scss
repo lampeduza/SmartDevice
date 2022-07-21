@@ -1,7 +1,7 @@
 .feedback {
 	background-color: #00b3ff;
 	background-image: url('../img/desktop/feedback-background.png');
-	background-position: 0 80%;
+	background-position: 0 -575px;
 	background-size: 1920px, 1582px;
 	background-repeat: no-repeat;
 
@@ -14,7 +14,8 @@
 .feedback__wrapper {
 	display: flex;
 	padding-top: 170px;
-	padding-bottom: 250px;
+	padding-bottom: 247px;
+
 }
 
 .feedback__contact {
@@ -28,7 +29,7 @@
 	font-weight: 400;
 	color: #ffffff;
 	margin: 0;
-	margin-bottom: 14px;
+	margin-bottom: 6px;
 }
 
 .feedback__contact-text {
@@ -90,6 +91,7 @@
 	font-size: 16px;
 	line-height: 19px;
 	font-weight: 700;
+	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	background-color: #041427;
 	color: #ffffff;
@@ -159,8 +161,8 @@
 	}
 
 	.feedback__wrapper {
-		padding-top: 50px;
-		padding-bottom: 125px;
+		padding-top: 45px;
+		padding-bottom: 111px;
 	}
 
 	.feedback__contact {
@@ -169,7 +171,7 @@
 	}
 
 	.feedback__contact-title {
-		margin-bottom: 10px;
+		margin-bottom: 7px;
 	}
 
 	.feedback__contact-text {
@@ -196,19 +198,19 @@
 
 @media (max-width: 769px) {
 	.feedback__wrapper {
-		padding-bottom: 90px;
+		padding-bottom: 88px;
 	}
 
 	.feedback__contact-title {
 		font-size: 30px;
 		line-height: 140.62%;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 
 	.feedback__contact-text {
 		font-size: 14px;
 		line-height: 134.4%;
-		margin-bottom: 40px;
+		margin-bottom: 34px;
 	}
 
 	.feedback__input {
@@ -223,6 +225,7 @@
 	.feedback__area {
 		margin-top: 0;
 		margin-bottom: 30px;
+		min-height: 180px;
 	}
 
 	.feedback__ask {
