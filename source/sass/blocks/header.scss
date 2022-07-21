@@ -61,7 +61,9 @@
 	}
 
 	.header__list {
-		gap: 40px;
+		flex-wrap: wrap;
+		gap: 10px 40px;
+    max-width: 50%;
 		margin: 0;
 		margin-top: 10px;
 		margin-right: 30px;
