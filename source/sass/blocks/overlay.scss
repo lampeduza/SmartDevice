@@ -19,7 +19,7 @@
 	position: fixed;
 	top: 146px;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-52%);
 }
 
 .overlay__title {
@@ -29,7 +29,6 @@
 	line-height: 140.62%;
 	color: #ffffff;
 	margin: 0;
-	margin-bottom: 15px;
 }
 
 .overlay__text {
@@ -68,7 +67,7 @@
   border: none;
   border-radius: 3px;
   padding: 25px 15px;
-  margin: 0 0 25px 0;
+  margin: 0 0 20px 0;
   resize: none;
   outline: none;
 
@@ -79,8 +78,10 @@
 
 .overlay__ask {
 	font-family: "Roboto Condensed", "Arial", sans-serif;
+	font-size: 16px;
   line-height: 19px;
   font-weight: 700;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   background-color: #041427;
   color: #ffffff;
@@ -94,6 +95,7 @@
 
 .overlay__agreement {
 	margin: 0;
+	margin-left: 11px;
 }
 
 .overlay__apply-label {
