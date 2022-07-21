@@ -229,6 +229,7 @@ img {
   margin-bottom: 48px; }
 
 .promo__get {
+  display: inline-block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -299,7 +300,8 @@ img {
   .promo__get-text {
     display: none; }
     .promo__get-text--mobile {
-      display: block; } }
+      display: block;
+      text-align: center; } }
 
 .advantages__wrapper {
   padding-top: 120px;
