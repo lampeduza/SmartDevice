@@ -27,6 +27,7 @@
 	align-items: center;
 	color: #f2f5f6;
 	line-height: 18px;
+	user-select: none;
 
 	svg {
 		margin-right: 15px;
@@ -47,6 +48,7 @@
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	margin-top: -10px;
+	user-select: none;
 }
 
 @media (max-width: 1919px) {
