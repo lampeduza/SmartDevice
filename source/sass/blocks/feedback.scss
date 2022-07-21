@@ -99,11 +99,13 @@
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
+	user-select: none;
 }
 
 .feedback__agreement {
 	margin: 0;
 	width: 100%;
+	user-select: none;
 }
 
 .feedback__apply-label {

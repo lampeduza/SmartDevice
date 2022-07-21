@@ -6,6 +6,10 @@
   flex-wrap: wrap;
 }
 
+.social__link {
+	user-select: none;
+}
+
 @media (max-width: 1919px) {
 	.social {
 		max-width: 50%;
