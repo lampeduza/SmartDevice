@@ -19,11 +19,25 @@
 	margin-bottom: 15px;
 }
 
+.about__description-data {
+	height: 145px;
+	overflow: hidden;
+
+	&--visible {
+		height: auto;
+		overflow: visible;
+	}
+}
+
 .about__description-text {
 	line-height: 22px;
 	color: #041827;
 	margin: 0;
   margin-bottom: 18px;
+
+  &:last-child {
+		margin: 0;
+	}
 }
 
 .about__description-show {
@@ -36,7 +50,7 @@
 	letter-spacing: 0.05em;
 	color: #00b2ff;
 	padding: 14px 13px;
-	margin-top: 20px;
+	margin-top: 40px;
 	background-color: transparent;
 	border: 1px solid #00b2ff;
 	border-radius: 3px;
@@ -54,12 +68,21 @@
 		margin-bottom: 12px;
 	}
 
+	.about__description-data {
+		height: 257px;
+
+		&--visible {
+			height: auto;
+			overflow: visible;
+		}
+	}
+
 	.about__picture {
 		margin-right: 25px;
 	}
 
 	.about__description-show {
-		margin-top: 0;
+		margin-top: 20px;
 	}
 }
 
@@ -80,16 +103,16 @@
 
 	.about__description-data {
 		height: 200px;
-		overflow: hidden;
+
+		&--visible {
+			height: auto;
+			overflow: visible;
+		}
 	}
 
 	.about__description-text {
 		font-size: 14px;
 		line-height: 134.4%;
-
-		&:last-child {
-			margin: 0;
-		}
 	}
 
 	.about__description-show {
