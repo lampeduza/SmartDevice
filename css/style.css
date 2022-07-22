@@ -105,7 +105,12 @@ img {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-          user-select: none; }
+          user-select: none;
+  cursor: pointer; }
+  .header__link:hover {
+    opacity: 0.9; }
+  .header__link:focus, .header__link:active {
+    opacity: 0.7; }
 
 .header__list {
   display: -webkit-box;
@@ -131,6 +136,10 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
+  .header__item-link:hover {
+    opacity: 0.9; }
+  .header__item-link:focus, .header__item-link:active {
+    opacity: 0.7; }
   .header__item-link svg {
     margin-right: 15px; }
 
@@ -246,6 +255,8 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
+  .promo__get:hover, .promo__get:focus, .promo__get:active {
+    background-color: #0098ff; }
 
 .promo__get-text--mobile {
   display: none; }
@@ -328,13 +339,17 @@ img {
   .advantages__item svg {
     fill: #00B2FF;
     margin-bottom: 20px; }
-  .advantages__item:hover, .advantages__item--current {
+  .advantages__item:hover, .advantages__item:focus,
+  .advantages__item:active .advantages__item--current {
     background-color: #00b2ff; }
-    .advantages__item:hover svg, .advantages__item--current svg {
+    .advantages__item:hover svg, .advantages__item:focus svg,
+    .advantages__item:active .advantages__item--current svg {
       fill: #f2f5f6; }
-    .advantages__item:hover .advantages__item-title, .advantages__item--current .advantages__item-title {
+    .advantages__item:hover .advantages__item-title, .advantages__item:focus .advantages__item-title,
+    .advantages__item:active .advantages__item--current .advantages__item-title {
       color: #f2f5f6; }
-    .advantages__item:hover .advantages__item-text, .advantages__item--current .advantages__item-text {
+    .advantages__item:hover .advantages__item-text, .advantages__item:focus .advantages__item-text,
+    .advantages__item:active .advantages__item--current .advantages__item-text {
       color: #f2f5f6; }
 
 .advantages__item-title {
@@ -457,6 +472,9 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
+  .about__description-show:hover, .about__description-show:focus, .about__description-show:active {
+    background-color: #00b2ff;
+    color: #ffffff; }
 
 @media (max-width: 1919px) {
   .about__wrapper {
@@ -532,6 +550,8 @@ img {
   background-position: 50% 0;
   background-size: 358px, 658px;
   position: relative; }
+  .service__item:hover, .service__item:focus, .service__item:active {
+    opacity: 0.8; }
   .service__item--manufactory {
     background-image: url("../img/desktop/item1.jpg"); }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -578,6 +598,8 @@ img {
   position: absolute;
   bottom: 0;
   right: 0; }
+  .service__link:hover, .service__link:focus, .service__link:active {
+    background-color: #0098ff; }
 
 @media (max-width: 1919px) {
   .service__wrapper {
@@ -729,6 +751,8 @@ img {
   padding: 14px; }
   .feedback__input:first-of-type {
     margin-right: 30px; }
+  .feedback__input:hover, .feedback__input:focus, .feedback__input:active {
+    background-color: rgba(4, 20, 39, 0.3); }
   .feedback__input::-webkit-input-placeholder {
     color: #ffffff; }
   .feedback__input::-moz-placeholder {
@@ -754,6 +778,8 @@ img {
   border-radius: 3px;
   padding: 25px 15px;
   resize: none; }
+  .feedback__area:hover, .feedback__area:focus, .feedback__area:active {
+    background-color: rgba(4, 20, 39, 0.3); }
   .feedback__area::-webkit-input-placeholder {
     color: #ffffff; }
   .feedback__area::-moz-placeholder {
@@ -784,6 +810,8 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
+  .feedback__ask:hover, .feedback__ask:focus, .feedback__ask:active {
+    background-color: #042327; }
 
 .feedback__agreement {
   margin: 0;
@@ -803,6 +831,8 @@ img {
   opacity: 0.8;
   position: relative;
   cursor: pointer; }
+  .feedback__apply-label:hover::before {
+    border-color: #f2f2f2; }
   .feedback__apply-label::before, .feedback__apply-label::after {
     content: '';
     position: absolute;
@@ -918,6 +948,8 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
+  .footer__link:hover {
+    opacity: 0.8; }
 
 @media (max-width: 1919px) {
   .footer__wrapper {
@@ -978,6 +1010,10 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
+  .social__link:hover {
+    opacity: 0.9; }
+  .social__link:focus, .social__link:active {
+    opacity: 0.5; }
 
 @media (max-width: 1919px) {
   .social {
@@ -1029,6 +1065,10 @@ img {
 .site-sections__link {
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7); }
+  .site-sections__link:hover {
+    color: white; }
+  .site-sections__link:focus, .site-sections__link:active {
+    color: rgba(255, 255, 255, 0.5); }
 
 @media (max-width: 1919px) {
   .site-sections__list {
@@ -1130,6 +1170,10 @@ img {
 .address__link {
   line-height: 135%;
   color: inherit; }
+  .address__link:hover {
+    color: white; }
+  .address__link:focus, .address__link:active {
+    color: rgba(255, 255, 255, 0.5); }
 
 @media (max-width: 1919px) {
   .address {
@@ -1250,6 +1294,8 @@ img {
     color: #ffffff; }
   .overlay__input::placeholder {
     color: #ffffff; }
+  .overlay__input:hover, .overlay__input:focus, .overlay__input:active {
+    background-color: rgba(4, 20, 39, 0.3); }
 
 .overlay__area {
   font-family: inherit;
@@ -1274,6 +1320,8 @@ img {
     color: #ffffff; }
   .overlay__area::placeholder {
     color: #ffffff; }
+  .overlay__area:hover, .overlay__area:focus, .overlay__area:active {
+    background-color: rgba(4, 20, 39, 0.3); }
 
 .overlay__ask {
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1290,6 +1338,8 @@ img {
   border: none;
   border-radius: 3px;
   cursor: pointer; }
+  .overlay__ask:hover, .overlay__ask:focus, .overlay__ask:active {
+    background-color: #042327; }
 
 .overlay__agreement {
   margin: 0;
