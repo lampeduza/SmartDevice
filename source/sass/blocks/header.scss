@@ -1,5 +1,8 @@
 .header {
 	background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 }
 
 .header__wrapper {
@@ -71,6 +74,12 @@
 }
 
 @media (max-width: 1919px) {
+	.header {
+		position: static;
+		width: auto;
+		z-index: inherit;
+	}
+
 	.header__wrapper {
 		align-items: flex-start;
 		justify-content: space-between;
