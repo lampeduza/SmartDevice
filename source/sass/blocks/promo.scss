@@ -52,6 +52,12 @@
 	padding: 17px 27px;
 	cursor: pointer;
 	user-select: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: #0098ff;
+	}
 }
 
 .promo__get-text {

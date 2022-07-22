@@ -22,6 +22,10 @@
 	width: max-content;
 	margin-bottom: 30px;
 	user-select: none;
+
+	&:hover {
+		opacity: 0.8;
+	}
 }
 
 @media (max-width: 1919px) {

@@ -36,6 +36,15 @@
 .address__link {
 	line-height: 135%;
 	color: inherit;
+
+	&:hover {
+		color: rgba(255, 255, 255, 1);		
+	}
+
+	&:focus,
+	&:active {
+		color: rgba(255, 255, 255, 0.5);
+	}
 }
 
 @media (max-width: 1919px) {

@@ -56,6 +56,13 @@
 	border-radius: 3px;
 	cursor: pointer;
 	user-select: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: #00b2ff;
+		color: #ffffff;
+	}
 }
 
 @media (max-width: 1919px) {

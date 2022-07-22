@@ -24,6 +24,8 @@
 	}
 
 	&:hover,
+	&:focus,
+	&:active
 	&--current {
 		background-color: #00b2ff;
 

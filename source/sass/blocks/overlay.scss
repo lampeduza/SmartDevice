@@ -53,6 +53,12 @@
   &::placeholder {
   	color: #ffffff;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+  	background-color: rgba(4, 20, 39, 0.30);
+  }
 }
 
 .overlay__area {
@@ -72,6 +78,12 @@
   &::placeholder {
   	color: #ffffff;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+  	background-color: rgba(4, 20, 39, 0.30);
+  }
 }
 
 .overlay__ask {
@@ -89,6 +101,12 @@
   border: none;
   border-radius: 3px;
   cursor: pointer;
+
+  &:hover,
+	&:focus,
+	&:active {
+		background-color: #042327;
+	}
 }
 
 .overlay__agreement {

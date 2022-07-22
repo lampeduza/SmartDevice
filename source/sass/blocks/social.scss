@@ -8,6 +8,15 @@
 
 .social__link {
 	user-select: none;
+
+	&:hover {
+		opacity: 0.9;
+	}
+
+	&:focus,
+	&:active {
+		opacity: 0.5;
+	}
 }
 
 @media (max-width: 1919px) {

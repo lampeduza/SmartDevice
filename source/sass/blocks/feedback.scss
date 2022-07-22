@@ -59,6 +59,12 @@
 		margin-right: 30px;
 	}
 
+	&:hover,
+  &:focus,
+  &:active {
+  	background-color: rgba(4, 20, 39, 0.30);
+  }
+
 	&::placeholder {
 		color: #ffffff;
 	}
@@ -78,6 +84,12 @@
 	border-radius: 3px;
 	padding: 25px 15px;
 	resize: none;
+
+	&:hover,
+  &:focus,
+  &:active {
+  	background-color: rgba(4, 20, 39, 0.30);
+  }
 
 	&::placeholder {
 		color: #ffffff;
@@ -100,6 +112,12 @@
 	border-radius: 3px;
 	cursor: pointer;
 	user-select: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: #042327;
+	}
 }
 
 .feedback__agreement {
@@ -118,6 +136,12 @@
 	opacity: 0.8;
 	position: relative;
 	cursor: pointer;
+
+	&:hover {
+		&::before {
+			border-color: #f2f2f2;
+		}
+	}
 
 	&::before,
 	&::after {
