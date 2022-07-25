@@ -196,7 +196,7 @@
               <label class="visually-hidden" for="username">Ваше имя</label>
               <input class="feedback__input" type="text" name="username" id="username" placeholder="Имя" required="">
               <label class="visually-hidden" for="phone-number">Ваш телефон</label>
-              <input class="feedback__input" type="number" name="phone-number" id="phone-number" placeholder="Телефон" required="">
+              <input class="feedback__input" type="tel" name="phone-number" id="phone-number" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон" required="">
               <textarea class="feedback__area" name="area-field" placeholder="Ваш вопрос" required=""></textarea>
               <button class="feedback__ask" type="submit">Задать вопрос</button>
               <p class="feedback__agreement">
@@ -239,8 +239,8 @@
           </ul>
         </div>
         <div class="footer__site-sections site-sections">
-          <p class="site-sections__title" tabindex="0">Разделы сайта</p>
-          <ul class="site-sections__list">
+          <p class="site-sections__title site-sections__title--clicked" tabindex="0">Разделы сайта</p>
+          <ul class="site-sections__list site-sections__list--expanded">
             <li class="site-sections__item"><a class="site-sections__link" href="#about">О Компаниии</a></li>
             <li class="site-sections__item"><a class="site-sections__link" href="#products">Продукты</a></li>
             <li class="site-sections__item"><a class="site-sections__link" href="#manufactory">Производство печатных плат</a></li>
@@ -269,8 +269,8 @@
           <label class="visually-hidden" for="username-field">Ваше имя</label>
           <input class="overlay__input" type="text" name="username-field" id="username-field" placeholder="Имя" required="">
           <label class="visually-hidden" for="phone-number-field">Ваш телефон</label>
-          <input class="overlay__input" type="number" name="phone-number-field" id="phone-number-field" placeholder="Телефон" required="">
-          <textarea class="overlay__area" name="area-field" placeholder="Ваш вопрос" required=""></textarea>
+          <input class="overlay__input" type="tel" name="phone-number-field" id="phone-number-field" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон" required="">
+          <textarea class="overlay__area" name="overlay-field" placeholder="Ваш вопрос" required=""></textarea>
           <button class="overlay__ask" type="submit">Отправить</button>
           <p class="overlay__agreement">
             <input class="visually-hidden overlay__apply" type="checkbox" id="agreement-field" name="agreement-field" checked="" required="">

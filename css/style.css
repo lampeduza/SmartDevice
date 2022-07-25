@@ -461,6 +461,7 @@ img {
     margin: 0; }
 
 .about__description-show {
+  display: none;
   min-width: 180px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
