@@ -98,7 +98,7 @@ addressTitle.addEventListener('click', () => {
 const feedbackTelephoneField = feedbackForm.querySelector('input[name="phone-number"]');
 const overlayTelephoneField = overlay.querySelector('input[name="phone-number-field"]');
 
-class telephoneMask {
+class TelephoneMask {
 	_number = '';
 	_inputValue = '';
 
@@ -155,9 +155,9 @@ class telephoneMask {
 	};
 };
 
-const overlayTelephoneMask = new telephoneMask(overlayTelephoneField);
+const overlayTelephoneMask = new TelephoneMask(overlayTelephoneField);
 overlayTelephoneMask.set();
-const feedbackTelephoneMask = new telephoneMask(feedbackTelephoneField);
+const feedbackTelephoneMask = new TelephoneMask(feedbackTelephoneField);
 feedbackTelephoneMask.set();
 
 if (window.localStorage) {
