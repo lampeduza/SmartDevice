@@ -1,35 +1,35 @@
 .social {
-	@include reset-list;
-	display: flex;
-	gap: 25px;
-	margin-left: 15px;
+  @include reset-list;
+  display: flex;
+  gap: 25px;
+  margin-left: 15px;
   flex-wrap: wrap;
 }
 
 .social__link {
-	user-select: none;
+  user-select: none;
 
-	&:hover {
-		opacity: 0.9;
-	}
+  &:hover {
+    opacity: 0.9;
+  }
 
-	&:focus,
-	&:active {
-		opacity: 0.5;
-	}
+  &:focus,
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: 1919px) {
-	.social {
-		max-width: 50%;
-		gap: 10px 25px;
-	}
+  .social {
+    max-width: 50%;
+    gap: 10px 25px;
+  }
 }
 
 @media (max-width: 769px) {
-	.social {
-		margin: 0;
-		max-width: 100%;
-	}
+  .social {
+    margin: 0;
+    max-width: 100%;
+  }
 }
 

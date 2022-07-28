@@ -1,19 +1,19 @@
 @media (min-width: $mobile-width) {
-	.container {
-		padding: 0 25px;
-	}
+  .container {
+    padding: 0 25px;
+  }
 }
 
 @media (min-width: $tablet-width) {
-	.container {
-		padding: 0 50px;
-	}
+  .container {
+    padding: 0 50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-	.container {
-		padding: 0 350px;
-		margin: 0 auto;
-		max-width: 1920px;
-	}
+  .container {
+    padding: 0 350px;
+    margin: 0 auto;
+    max-width: 1920px;
+  }
 }

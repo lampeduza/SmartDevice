@@ -1,45 +1,45 @@
 .overlay {
-	width: 100%;
-	height: 100vh;
-	background-color: rgba(3, 16, 27, 0.7);
-	position: fixed;
-	top: 0;
-	left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(3, 16, 27, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
 
-	&--hidden {
-		display: none;
-	}
+  &--hidden {
+    display: none;
+  }
 }
 
 .overlay__contact {
-	width: 500px;
-	padding: 40px;
-	background-color: #00B3FF;
-	border-radius: 3px;
-	position: fixed;
-	top: 146px;
-	left: 50%;
-	transform: translateX(-52%);
+  width: 500px;
+  padding: 40px;
+  background-color: #00B3FF;
+  border-radius: 3px;
+  position: fixed;
+  top: 146px;
+  left: 50%;
+  transform: translateX(-52%);
 }
 
 .overlay__title {
-	font-family: $secondary-font;
-	font-weight: 400;
-	font-size: 30px;
-	line-height: 140.62%;
-	color: #ffffff;
-	margin: 0;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140.62%;
+  color: #ffffff;
+  margin: 0;
 }
 
 .overlay__text {
-	line-height: 22px;
+  line-height: 22px;
   color: #ffffff;
   margin: 0;
   margin-bottom: 40px;
 }
 
 .overlay__input {
-	font-family: inherit;
+  font-family: inherit;
   font-size: 16px;
   line-height: 22px;
   color: #000000;
@@ -51,18 +51,18 @@
   margin-bottom: 20px;
 
   &::placeholder {
-  	color: #ffffff;
+    color: #ffffff;
   }
 
   &:hover,
   &:focus,
   &:active {
-  	background-color: rgba(4, 20, 39, 0.30);
+    background-color: rgba(4, 20, 39, 0.30);
   }
 }
 
 .overlay__area {
-	font-family: inherit;
+  font-family: inherit;
   font-size: 16px;
   line-height: 22px;
   color: #000000;
@@ -76,19 +76,19 @@
   resize: none;
 
   &::placeholder {
-  	color: #ffffff;
+    color: #ffffff;
   }
 
   &:hover,
   &:focus,
   &:active {
-  	background-color: rgba(4, 20, 39, 0.30);
+    background-color: rgba(4, 20, 39, 0.30);
   }
 }
 
 .overlay__ask {
-	font-family: "Roboto Condensed", "Arial", sans-serif;
-	font-size: 16px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
   line-height: 19px;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -103,72 +103,72 @@
   cursor: pointer;
 
   &:hover,
-	&:focus,
-	&:active {
-		background-color: #042327;
-	}
+  &:focus,
+  &:active {
+    background-color: #042327;
+  }
 }
 
 .overlay__agreement {
-	margin: 0;
-	margin-left: 11px;
+  margin: 0;
+  margin-left: 11px;
 }
 
 .overlay__apply-label {
-	display: block;
-	width: 100%;
-	padding-left: 26px;
-	font-size: 14px;
-	line-height: 16px;
-	color: #FFFFFF;
-	opacity: 0.8;
-	position: relative;
-	cursor: pointer;
+  display: block;
+  width: 100%;
+  padding-left: 26px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  position: relative;
+  cursor: pointer;
 
-	&::before,
-	&::after {
-		content: '';
-		position: absolute;
-		transform: translateY(-50%);
-		top: 50%;
-	}
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+  }
 
-	&::before {
-		width: 15px;
-		height: 15px;
-		border: 1px solid #ffffff;
-		border-radius: 2px;
-		left: 0;
-	}
+  &::before {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    left: 0;
+  }
 }
 
 .overlay__apply {
-	&:checked {
-		~ .overlay__apply-label {
-			&::after {
-				width: 9px;
-				height: 6px;
-				background-image: url('../img/icons/check.svg');
-				left: 3px;
-			}
-		}
-	}
+  &:checked {
+    ~ .overlay__apply-label {
+      &::after {
+        width: 9px;
+        height: 6px;
+        background-image: url('../img/icons/check.svg');
+        left: 3px;
+      }
+    }
+  }
 }
 
 .overlay__close {
-	padding: 0;
-	background-color: transparent;
-	border: none;
-	position: absolute;
-	top: 25px;
-	right: 25px;
-	cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
 }
 
 @media (max-width: 769px) {
-	.overlay__contact {
-		padding: 25px;
-		width: 90%;
-		top: 60px;
-	}
+  .overlay__contact {
+    padding: 25px;
+    width: 90%;
+    top: 60px;
+  }
 }
