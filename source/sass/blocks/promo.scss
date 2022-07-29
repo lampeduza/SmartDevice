@@ -14,49 +14,49 @@
   padding-top: 190px;
   padding-bottom: 280px;
   padding-left: 475px;
-}
 
-.promo__title {
-  font-family: $secondary-font;
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 94px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: #f2f5f6;
-  margin: 0;
-  margin-bottom: 31px;
-}
+  h1 {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #f2f5f6;
+    margin: 0;
+    margin-bottom: 31px;
+  }
 
-.promo__text {
-  color: #f2f5f6;
-  font-size: 22px;
-  line-height: 1.55;
-  width: 685px;
-  margin: 0;
-  margin-bottom: 48px;
-}
+  p {
+    color: #f2f5f6;
+    font-size: 22px;
+    line-height: 1.55;
+    width: 685px;
+    margin: 0;
+    margin-bottom: 48px;
+  }
 
-.promo__get {
-  display: inline-block;
-  font-family: $secondary-font;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #f2f5f6;
-  background-color: #00B2FF;
-  border: none;
-  border-radius: 3px;
-  padding: 17px 27px;
-  cursor: pointer;
-  user-select: none;
+  a {
+    display: inline-block;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #f2f5f6;
+    background-color: #00B2FF;
+    border: none;
+    border-radius: 3px;
+    padding: 17px 27px;
+    cursor: pointer;
+    user-select: none;
 
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: #0098ff;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #0098ff;
+    }
   }
 }
 
@@ -84,22 +84,22 @@
     padding-top: 85px;
     padding-bottom: 205px;
     padding-left: 50px;
-  }
 
-  .promo__title {
-    font-size: 64px;
-    line-height: 75px;
-    letter-spacing: 0.07em;
-    margin-bottom: 0;
-  }
+   h1 {
+      font-size: 64px;
+      line-height: 75px;
+      letter-spacing: 0.07em;
+      margin-bottom: 0;
+    }
 
-  .promo__text {
-    margin-bottom: 58px;
-    width: auto;
-  }
+    p {
+      margin-bottom: 58px;
+      width: auto;
+    }
 
-  .promo__get {
-    margin-left: 45px;
+    a {
+      margin-left: 45px;
+    }
   }
 }
 
@@ -108,26 +108,26 @@
     padding-top: 86px;
     padding-bottom: 190px;
     padding-left: 25px;
-  }
 
-  .promo__title {
+    h1 {
     font-size: 36px;
     line-height: 42px;
     margin-bottom: 8px;
   }
 
-  .promo__text {
+  p {
     font-size: 14px;
     line-height: 155%;
     margin-bottom: 45px;
   }
 
-  .promo__get {
+  a {
     width: 100%;
     font-size: 14px;
     line-height: 16px;
     margin-left: 0;
     padding: 12px;
+  }
   }
 
   .promo__get-text {
