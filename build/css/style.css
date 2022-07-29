@@ -717,21 +717,19 @@ img {
 
 .feedback__contact {
   max-width: 580px; }
-
-.feedback__contact-title {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 36px;
-  line-height: 51px;
-  font-weight: 400;
-  color: #ffffff;
-  margin: 0;
-  margin-bottom: 6px; }
-
-.feedback__contact-text {
-  line-height: 22px;
-  color: #ffffff;
-  margin: 0;
-  margin-bottom: 14px; }
+  .feedback__contact h2 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 6px; }
+    .feedback__contact h2 + p {
+      line-height: 22px;
+      color: #ffffff;
+      margin: 0;
+      margin-bottom: 14px; }
 
 .feedback__form {
   display: -webkit-box;
@@ -865,10 +863,10 @@ img {
   .feedback__contact {
     max-width: none;
     width: 100%; }
-  .feedback__contact-title {
-    margin-bottom: 7px; }
-  .feedback__contact-text {
-    margin-bottom: 25px; }
+    .feedback__contact h2 {
+      margin-bottom: 7px; }
+      .feedback__contact h2 + p {
+        margin-bottom: 25px; }
   .feedback__form textarea {
     margin-bottom: 35px; }
   .feedback__form button {
@@ -882,14 +880,14 @@ img {
 @media (max-width: 769px) {
   .feedback__wrapper {
     padding-bottom: 88px; }
-  .feedback__contact-title {
-    font-size: 30px;
-    line-height: 140.62%;
-    margin-bottom: 10px; }
-  .feedback__contact-text {
-    font-size: 14px;
-    line-height: 134.4%;
-    margin-bottom: 34px; }
+    .feedback__wrapper h2 {
+      font-size: 30px;
+      line-height: 140.62%;
+      margin-bottom: 10px; }
+      .feedback__wrapper h2 + p {
+        font-size: 14px;
+        line-height: 134.4%;
+        margin-bottom: 34px; }
   .feedback__form input {
     width: 100%;
     margin-bottom: 20px; }
@@ -1255,20 +1253,18 @@ img {
   left: 50%;
   -webkit-transform: translateX(-52%);
           transform: translateX(-52%); }
-
-.overlay__title {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 140.62%;
-  color: #ffffff;
-  margin: 0; }
-
-.overlay__text {
-  line-height: 22px;
-  color: #ffffff;
-  margin: 0;
-  margin-bottom: 40px; }
+  .overlay__contact h2 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140.62%;
+    color: #ffffff;
+    margin: 0; }
+    .overlay__contact h2 + p {
+      line-height: 22px;
+      color: #ffffff;
+      margin: 0;
+      margin-bottom: 40px; }
 
 .overlay__form input {
   font-family: inherit;
