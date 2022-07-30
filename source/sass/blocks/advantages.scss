@@ -107,6 +107,17 @@
     min-height: 340px;
     padding: 30px 30px 35px 25px;
 
+    h3 {
+      font-size: 20px;
+      line-height: 140%;
+      margin-bottom: 7px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 135%;
+    }
+
     &--condifentiality,
     &--personalization {
       min-height: 325px;
@@ -121,16 +132,5 @@
       height: 30px;
       margin-bottom: 15px;
     }
-  }
-
-  h3 {
-    font-size: 20px;
-    line-height: 140%;
-    margin-bottom: 7px;
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 135%;
   }
 }
