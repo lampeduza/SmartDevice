@@ -23,6 +23,7 @@ const path = require('path');
 function deploy(cb) {
   ghPages.publish(path.join(process.cwd(), './build'), cb);
 }
+
 exports.deploy = deploy;
 
 gulp.task("css", function () {
@@ -30,11 +31,11 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(csso())
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("css-min", function () {
@@ -55,10 +56,10 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css", "css-min", "refresh"));
-  gulp.watch("source/img/icon-*.svg");
+  gulp.watch("source/img/**/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
   gulp.watch('source/js/**/*', gulp.series(gulp.series(["js"])));
-  gulp.watch('source/img/**/*', gulp.series(["copy"]));
+  gulp.watch('source/img/**/*', gulp.series(["images", "webp"]));
 });
 
 gulp.task("refresh", function (done) {
@@ -74,20 +75,20 @@ gulp.task("images", function() {
       imagemin.svgo()
     ]))
 
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 85}))
-    .pipe(gulp.dest("source/img"));
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icons/{icon-*,htmlacademy*}.svg")
+  return gulp.src("source/img/**/icon-*.svg")
     .pipe(svgstore({inlineSvg: true}))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img/sprite"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function () {
@@ -107,7 +108,6 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/img/icons/**",
     "source/js/**",
     "source//*.ico"
     ], {
