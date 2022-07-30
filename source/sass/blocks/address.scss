@@ -97,7 +97,7 @@
       content: '';
       width: 15px;
       height: 15px;
-      background-image: url('../img/icons/plus.svg');
+      background-image: url('../img/icons/icon-plus.svg');
       position: absolute;
       right: 0;
       top: 50%;
@@ -107,7 +107,7 @@
     &--clicked {
       &::after {
         height: 1px;
-        background-image: url('../img/icons/minus.svg');
+        background-image: url('../img/icons/icon-minus.svg');
       }
     }
   }

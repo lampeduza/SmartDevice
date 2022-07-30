@@ -6,7 +6,7 @@
   margin-top: 114px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-   background-image: url('../img/desktop/promo-background@2x.jpg');
+   background-image: url('../img/desktop/promo-background@2x.webp');
   }
 }
 
@@ -75,7 +75,7 @@
     margin-top: -20px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-     background-image: url('../img/tablet/promo-background@2x.jpg');
+     background-image: url('../img/tablet/promo-background@2x.webp');
      background-size: cover;
     }
   }
@@ -104,6 +104,18 @@
 }
 
 @media (max-width: 769px) {
+  .promo {
+    background-image: url('../img/mobile/promo-background.jpg');
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+     background-image: url('../img/mobile/promo-background@2x.webp');
+     background-size: cover;
+    }
+  }
+
   .promo__wrapper {
     padding-top: 86px;
     padding-bottom: 190px;
