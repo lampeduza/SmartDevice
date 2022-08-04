@@ -10,6 +10,7 @@ function onCloseOverlay () {
   overlay.removeEventListener('click', onCloseOverlay);
   document.removeEventListener('keydown', onEscapeKeyDown);
   overlayForm.removeEventListener('submit', onSubmitOverlay);
+  window.removeEventListener('click', onWindowClick);
 };
 
 function onEscapeKeyDown (evt) {
@@ -25,6 +26,13 @@ function onSubmitOverlay (evt) {
   overlayForm.reset();
 }
 
+function onWindowClick (evt) {
+  if (!evt.target.closest('.overlay__contact') && evt.target.closest('.overlay')) {
+    evt.preventDefault();
+    onCloseOverlay();
+  }
+}
+
 requestButton.addEventListener('click', (evt) => {
   evt.preventDefault();
   overlay.classList.remove('overlay--hidden');
@@ -32,7 +40,8 @@ requestButton.addEventListener('click', (evt) => {
 
   overlayCloseButton.addEventListener('click', onCloseOverlay);
   document.addEventListener('keydown', onEscapeKeyDown);
-  overlayForm.addEventListener('submit', onSubmitOverlay)
+  overlayForm.addEventListener('submit', onSubmitOverlay);
+  window.addEventListener('click', onWindowClick)
 });
 
 const promoGetButton = document.querySelector('.promo__get');
@@ -98,7 +107,7 @@ addressTitle.addEventListener('click', () => {
 const feedbackTelephoneField = feedbackForm.querySelector('input[name="phone-number"]');
 const overlayTelephoneField = overlay.querySelector('input[name="phone-number-field"]');
 
-class TelephoneMask {
+class telephoneMask {
   _number = '';
   _inputValue = '';
 
@@ -155,9 +164,9 @@ class TelephoneMask {
   };
 };
 
-const overlayTelephoneMask = new TelephoneMask(overlayTelephoneField);
+const overlayTelephoneMask = new telephoneMask(overlayTelephoneField);
 overlayTelephoneMask.set();
-const feedbackTelephoneMask = new TelephoneMask(feedbackTelephoneField);
+const feedbackTelephoneMask = new telephoneMask(feedbackTelephoneField);
 feedbackTelephoneMask.set();
 
 if (window.localStorage) {
