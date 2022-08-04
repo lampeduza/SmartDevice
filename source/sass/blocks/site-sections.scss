@@ -54,8 +54,6 @@
 @media (max-width: 769px) {
   .site-sections {
     width: 100%;
-    padding-top: 23px;
-    padding-bottom: 23px;
     position: relative;
     margin: 0;
     // overflow: hidden;
@@ -83,6 +81,8 @@
 
   .site-sections__title {
     margin: 0;
+    padding-top: 23px;
+    padding-bottom: 23px;
     cursor: pointer;
     position: relative;
 
@@ -107,6 +107,7 @@
 
   .site-sections__list {
     padding-top: 15px;
+    padding-bottom: 23px;
     gap: 15px 0;
     display: none;
 
