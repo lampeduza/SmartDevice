@@ -143,6 +143,10 @@
     }
 
     input {
+      width: auto;
+      margin-top: 20px;
+      margin-left: 2px;
+
       &:checked {
         ~ label {
           &::after {
