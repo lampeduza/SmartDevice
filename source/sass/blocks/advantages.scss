@@ -16,7 +16,6 @@
   border: 1px solid #EBEBEB;
   border-left: 5px solid #00b2ff;
   padding: 40px;
-  cursor: pointer;
 
   h3 {
     font-family: $secondary-font;
@@ -40,9 +39,7 @@
     margin-bottom: 20px;
   }
 
-  &:hover,
-  &:focus,
-  &:active {
+  &:hover {
     background-color: #00b2ff;
 
     svg {
