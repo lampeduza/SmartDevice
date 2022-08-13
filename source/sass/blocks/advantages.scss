@@ -1,6 +1,7 @@
 .advantages__wrapper {
   padding-top: 120px;
   padding-bottom: 120px;
+  max-width: 1222px;
 }
 
 .advantages__list {
@@ -56,7 +57,7 @@
   }
 }
 
-@media (max-width: 1920px) {
+@media (max-width: $desktop-width) {
   .advantages__wrapper {
     padding-top: 80px;
     padding-bottom: 76px;
@@ -88,7 +89,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .advantages__wrapper {
     padding-top: 50px;
     padding-bottom: 50px;

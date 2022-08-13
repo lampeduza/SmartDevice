@@ -43,7 +43,7 @@
   }
 }
 
-@media (max-width: 1919px) {
+@media (max-width: 1023px) {
   .site-sections__list {
     flex-wrap: nowrap;
     height: auto;
@@ -51,12 +51,11 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .site-sections {
     width: 100%;
     position: relative;
     margin: 0;
-    // overflow: hidden;
 
     &::before,
     &::after {
@@ -65,8 +64,8 @@
       height: 1px;
       background-color: #f8fdff;
       position: absolute;
-      left: -25px;
-      margin-left: -25px;
+      left: -50px;
+      margin-left: 0;
       transform: translateX(25px);
     }
 

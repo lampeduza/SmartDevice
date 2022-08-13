@@ -1,6 +1,7 @@
 .about__wrapper {
   display: flex;
   padding-bottom: 96px;
+  max-width: 1220px;
 
   picture {
     flex-shrink: 0;
@@ -68,7 +69,7 @@
   }
 }
 
-@media (max-width: 1919px) {
+@media (max-width: 1023px) {
   .about__wrapper {
     padding-bottom: 78px;
 
@@ -98,7 +99,7 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .about__wrapper {
     padding-bottom: 80px;
 

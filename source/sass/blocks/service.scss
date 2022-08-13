@@ -5,6 +5,8 @@
 .service__wrapper {
   padding-top: 65px;
   padding-bottom: 144px;
+  max-width: 1220px;
+  margin: 0 auto;
 }
 
 .service__title {
@@ -26,11 +28,11 @@
 .service__list {
   @include reset-list;
   display: flex;
-  gap: 85px;
+  gap: 6.967%;
 }
 
 .service__item {
-  width: calc(100% / 3 - 28.33px);
+  width: 28.68%;
   min-height: 650px;
   padding: 50px 40px;
   background-color: #00b2ff;
@@ -102,7 +104,7 @@
   }
 }
 
-@media (max-width: 1919px) {
+@media (max-width: 1023px) {
   .service__wrapper {
     padding-top: 55px;
     padding-bottom: 75px;
@@ -157,7 +159,7 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .service__wrapper {
     padding-top: 50px;
     padding-bottom: 86px;

@@ -192,7 +192,7 @@
   margin-top: 76px;
 }
 
-@media (max-width: 1919px) {
+@media (max-width: 1023px) {
   .feedback {
     background-image: none;
   }
@@ -200,7 +200,7 @@
   .feedback__wrapper {
     padding-top: 45px;
     padding-bottom: 111px;
-    max-width: 770px;
+    max-width: 1024px;
     margin: 0 auto;
   }
 
@@ -224,6 +224,7 @@
 
     button {
       margin-right: 85px;
+      margin-bottom: 0;
     }
 
     p {
@@ -237,7 +238,7 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .feedback__wrapper {
     padding-bottom: 88px;
 

@@ -1,5 +1,5 @@
 .address {
-  margin-left: auto;
+  // margin-left: auto;
   margin-top: 7px;
   min-width: 345px;
 }
@@ -47,7 +47,7 @@
   }
 }
 
-@media (max-width: 1919px) {
+@media (max-width: 1023px) {
   .address {
     min-width: auto;
     margin-left: 0;
@@ -63,7 +63,7 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .address {
     width: 100%;
     margin: 0;
