@@ -7,6 +7,8 @@ const overlayNameField = overlay.querySelector('input[name="username-field"]');
 function onCloseOverlay () {
   overlay.classList.add('overlay--hidden');
 
+  document.body.style.overflow = 'auto';
+
   overlay.removeEventListener('click', onCloseOverlay);
   document.removeEventListener('keydown', onEscapeKeyDown);
   overlayForm.removeEventListener('submit', onSubmitOverlay);
@@ -37,6 +39,7 @@ requestButton.addEventListener('click', (evt) => {
   evt.preventDefault();
   overlay.classList.remove('overlay--hidden');
   overlayNameField.focus();
+  document.body.style.overflow = 'hidden';
 
   overlayCloseButton.addEventListener('click', onCloseOverlay);
   document.addEventListener('keydown', onEscapeKeyDown);
@@ -160,7 +163,7 @@ class telephoneMask {
       value = value.slice(2);
     }
 
-    this._number = value.split('').filter((char) => parseInt(char)).join('').slice(0, 10);
+    this._number = value.split('').filter((char) => Number.isInteger(+char)).join('').slice(0, 10);
   };
 };
 
